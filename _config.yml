@@ -1,0 +1,6 @@
+# Keep working notes in the repo but out of the published site.
+exclude:
+  - CLAUDE.md
+  - PLACEHOLDERS.md
+  - README.md
+  - PORTFOLIO_STATUS.md
