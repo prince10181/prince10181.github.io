@@ -1,41 +1,29 @@
 (function () {
   'use strict';
 
-  // Planned projects. Statuses are deliberately "Planned": nothing here is built.
-  var plannedProjects = [
-    {
-      title: 'AI Decision Engine Testing & Governance Platform',
-      summary: 'Test and govern decision-engine changes: regression checks, impact analysis and an audit trail around rule updates.',
-      tags: ['Decision engines', 'Testing', 'Governance']
-    },
-    {
-      title: 'AI-Powered Lending Underwriting Copilot',
-      summary: 'Assist underwriters with policy-grounded guidance and summaries, with the final decision staying with a person.',
-      tags: ['Underwriting', 'RAG', 'Human-in-the-loop']
-    }
-  ];
+  // Resume: stays a "coming soon" label until assets/Prince_Garg_Resume.pdf is published,
+  // then upgrades itself to a real link. No broken link either way.
+  var RESUME_URL = 'assets/Prince_Garg_Resume.pdf';
 
-  function el(tag, cls, text) {
-    var n = document.createElement(tag);
-    if (cls) n.className = cls;
-    if (text) n.textContent = text;
-    return n;
+  function enableResume() {
+    document.querySelectorAll('[data-resume]').forEach(function (el) {
+      var a = document.createElement('a');
+      a.className = el.className.replace('is-disabled', '').trim();
+      a.href = RESUME_URL;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = el.getAttribute('data-resume') === 'hero' ? 'Download resume (PDF)' : 'Resume (PDF)';
+      a.setAttribute('download', '');
+      a.removeAttribute('target');
+      el.replaceWith(a);
+    });
   }
 
-  var grid = document.getElementById('projectsGrid');
-  if (grid) {
-    plannedProjects.forEach(function (p) {
-      var card = el('article', 'project-card card');
-      var head = el('div', 'project-card-header');
-      head.appendChild(el('span', 'badge badge-wip', 'Planned'));
-      card.appendChild(head);
-      card.appendChild(el('h4', null, p.title));
-      card.appendChild(el('p', null, p.summary));
-      var tags = el('div', 'tech-stack-row');
-      p.tags.forEach(function (t) { tags.appendChild(el('span', 'tech-tag', t)); });
-      card.appendChild(tags);
-      grid.appendChild(card);
-    });
+  if (window.fetch && location.protocol.indexOf('http') === 0) {
+    fetch(RESUME_URL, { method: 'HEAD' }).then(function (r) {
+      var type = r.headers.get('content-type') || '';
+      if (r.ok && type.indexOf('pdf') !== -1) enableResume();
+    }).catch(function () { /* keep "coming soon" */ });
   }
 
   // Mobile nav
@@ -54,12 +42,18 @@
     });
   }
 
+  // Email address is assembled here so it is not printed in the page source.
+  // (Light protection against scrapers only; it is not secret.)
+  var addr = ['gprince', 'garg'].join('') + '@' + ['gmail', 'com'].join('.');
+  var emailLink = document.getElementById('emailLink');
+  if (emailLink) emailLink.setAttribute('href', 'mailto:' + addr);
+
   // Copy email
   var copyBtn = document.getElementById('copyEmailBtn');
   var status = document.getElementById('copyStatus');
   if (copyBtn) {
     copyBtn.addEventListener('click', function () {
-      var email = copyBtn.getAttribute('data-email');
+      var email = addr;
       function done(msg) { if (status) status.textContent = msg; }
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(email).then(
