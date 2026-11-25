@@ -14,7 +14,7 @@ enterprise consultant who also builds practical solutions. Not a student templat
 5. **No client names**, proprietary implementation details or customer data (NDA).
 
 ## Positioning
-- Identity (user decision, latest 2026-11-25): eyebrow, `<title>` and meta use
+- Page copy (user decision, 2026-11-25, supersedes the h1 below): h1 "I turn credit policy into decision rules that run in production for lenders and insurers."; hero intro says "Over seven years at FICO" (user chose; internship disclosed in Experience); at-a-glance strip = 7+ years / 20+ scorecards / banks, digital lenders, insurers (India and APAC); scorecard bullet = "Operationalized 20+ application and behaviour scorecards"; contact line has no location or "open to work" wording; hero shows no city. Earlier identity: `<title>` and meta use
   "Decisioning & Business Rules Consultant | Applied AI for BFSI". Keep the h1 "I turn lending and
   insurance policy into decisions that run inside enterprise systems." Specialty line (hero + About):
   "Depth in unsecured lending and motor insurance." Earlier headline ideas are superseded.
@@ -63,7 +63,7 @@ Delivery; Applied AI. LangChain/LangGraph/Tableau are deliberately not listed (n
 - SEO: canonical/OG/Twitter tags, robots.txt, sitemap.xml, base URL https://prince10181.github.io/.
 - Accessibility: skip link, :focus-visible, --text-muted #55657A (5.4:1 on #F1F5F9).
 - Pages excludes working notes via _config.yml (CLAUDE.md, PLACEHOLDERS.md, README.md, PORTFOLIO_STATUS.md).
-- Single page + one project case-study page. 
+- Single page: hero + at-a-glance strip, Project, Approach, Experience, Skills, Contact (About section removed 2026-11-25: it repeated the intro). Case-study page is optional later.
 - Contact: "Email me" button + copy button; address is assembled in script.js (not in page source,
   light scraper protection only). LinkedIn alongside. No form service.
 - Accessibility: contrast, keyboard nav, reduced-motion. Mobile-first.
