@@ -26,9 +26,7 @@ Keep private / never publish: compensation, notice period, company shortlist, cu
 Avoid wording: AI Expert, ML Engineer, Data Scientist, Credit Risk Model Developer, Production AI Architect, Python Expert.
 
 ## Needs from Prince
-- Resume: assets/Resume_A_Decisioning_Business_Rules_Consultant.pdf is uploaded locally but NOT committed:
-  it names clients (AU SFB, IndusInd, YES, HDFC Ergo, etc.). Decide: publish as is, or provide a client-free
-  public version. If published, rename it to assets/Prince_Garg_Resume.pdf and the buttons activate.
+- Resume: assets/Prince_Garg_Resume.pdf is published (Prince confirmed client names and phone number are fine). It still says "Lead Solution Engineer" while the site says "Lead Engineer, Solution Engineering": align the PDF next time you export it.
 - Title is confirmed as "Lead Engineer, Solution Engineering" (site updated). The uploaded resume PDF still says "Lead Solution Engineer".
 - No-passcode "sample mode" URL for the demo (currently passcode-gated; visitors must email for it).
 - Decision on making the RuleLoom repo public (needs key rotation + README first). Until then no source link.

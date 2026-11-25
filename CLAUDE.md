@@ -59,7 +59,7 @@ Delivery; Applied AI. LangChain/LangGraph/Tableau are deliberately not listed (n
 - Fonts self-hosted in assets/fonts (woff2) via css/fonts.css. No Google Fonts requests.
 - Screenshots: WebP with PNG fallback, width/height set. OG image: assets/og-image.png (1200x630).
 - Resume: assets/Prince_Garg_Resume.pdf. Until it exists the buttons show "coming soon"; script.js
-  upgrades them to links automatically. Resume PDF must not name clients (Prince's own NDA rule) before it is published; it is held out of git until he confirms.
+  upgrades them to links automatically. Resume PDF (assets/Prince_Garg_Resume.pdf) is published as supplied: Prince confirmed its client names and phone number are fine. The website copy itself still names no clients.
 - SEO: canonical/OG/Twitter tags, robots.txt, sitemap.xml, base URL https://prince10181.github.io/.
 - Accessibility: skip link, :focus-visible, --text-muted #55657A (5.4:1 on #F1F5F9).
 - Pages excludes working notes via _config.yml (CLAUDE.md, PLACEHOLDERS.md, README.md, PORTFOLIO_STATUS.md).
