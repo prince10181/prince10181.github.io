@@ -3,25 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prince Garg | Decisioning &amp; BFSI Technology Consultant</title>
-  <meta name="description" content="Decisioning and BFSI technology consultant at FICO: business rules, enterprise integrations and practical applied AI for lending and insurance." />
+  <title>Prince Garg | Decisioning &amp; Business Rules Consultant | Applied AI for BFSI</title>
+  <meta name="description" content="Decisioning &amp; Business Rules Consultant | Applied AI for BFSI. Lead Engineer, Solution Engineering at FICO since 2019, with depth in unsecured lending and motor insurance." />
   <meta name="author" content="Prince Garg" />
+  <link rel="canonical" href="https://prince10181.github.io/" />
 
-  <meta property="og:title" content="Prince Garg | Decisioning & BFSI Technology Consultant" />
-  <meta property="og:description" content="Business rules, enterprise integrations and practical applied AI for BFSI." />
+  <meta property="og:title" content="Prince Garg | Decisioning &amp; Business Rules Consultant | Applied AI for BFSI" />
+  <meta property="og:description" content="Decisioning &amp; Business Rules Consultant | Applied AI for BFSI. Lead Engineer, Solution Engineering at FICO since 2019, with depth in unsecured lending and motor insurance." />
   <meta property="og:type" content="website" />
-  <!-- [SITE_URL] set og:url and canonical once the final URL is known -->
+  <meta property="og:url" content="https://prince10181.github.io/" />
+  <meta property="og:image" content="https://prince10181.github.io/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="RuleLoom, an AI-assisted policy-to-rules workbench: start screen" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prince Garg | Decisioning &amp; Business Rules Consultant | Applied AI for BFSI" />
+  <meta name="twitter:description" content="Decisioning &amp; Business Rules Consultant | Applied AI for BFSI. Lead Engineer, Solution Engineering at FICO since 2019, with depth in unsecured lending and motor insurance." />
+  <meta name="twitter:image" content="https://prince10181.github.io/assets/og-image.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Prince Garg",
+  "jobTitle": "Lead Engineer, Solution Engineering",
+  "url": "https://prince10181.github.io/",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "FICO"
+  },
+  "description": "Decisioning & Business Rules Consultant | Applied AI for BFSI",
+  "knowsAbout": [
+    "Business rules",
+    "Credit decisioning",
+    "Credit scorecards",
+    "Enterprise integration",
+    "BFSI",
+    "Applied AI"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/prince-garg1188/",
+    "https://github.com/prince10181"
+  ]
+}
+  </script>
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
-  <!-- TODO (design step): self-host fonts instead of Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
-
+  <!-- Self-hosted fonts: no third-party requests -->
+  <link rel="preload" href="assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/PlusJakartaSans.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" id="top">
     <div class="container nav-container">
       <a href="#top" class="brand" aria-label="Home">
@@ -36,34 +72,35 @@
       <nav class="site-nav" id="siteNav">
         <a href="#about">About</a>
         <a href="#projects">Project</a>
+        <a href="#approach">Approach</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <!-- [RESUME_PDF] add the file to assets/ and update this link -->
-        <a href="assets/[RESUME_PDF]" class="btn btn-sm btn-outline" target="_blank" rel="noopener">Resume</a>
+        <!-- Resume: shows "coming soon" until assets/Prince_Garg_Resume.pdf exists; script.js upgrades it to a link automatically -->
+        <span class="btn btn-sm btn-outline is-disabled" aria-disabled="true" data-resume="nav">Resume (PDF): coming soon</span>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <!-- Hero -->
     <section class="hero section">
       <div class="container">
         <div class="hero-content fade-in">
           <div class="eyebrow">
             <span class="status-dot"></span>
-            <span>Business Rules • Enterprise Integrations • Applied AI</span>
+            <span>Decisioning &amp; Business Rules Consultant | Applied AI for BFSI</span>
           </div>
           <h1 class="hero-title">
             I turn lending and insurance policy into decisions that run inside enterprise systems.
           </h1>
           <p class="hero-subtitle">
-            Decisioning &amp; BFSI technology consultant at FICO since 2019. I work where credit policy, rules engines and system integration meet, and I now build practical, human-reviewed AI tools for that same problem.
+            Lead Engineer, Solution Engineering at FICO since 2019. I work where credit policy, decision engines and system integration meet, and I now build practical, human-reviewed AI for that same problem. Depth in unsecured lending and motor insurance.
           </p>
 
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">View project</a>
-            <a href="assets/[RESUME_PDF]" class="btn btn-secondary" download>Download resume</a>
+            <span class="btn btn-secondary is-disabled" aria-disabled="true" data-resume="hero">Download resume (PDF): coming soon</span>
           </div>
 
           <div class="hero-socials">
@@ -86,7 +123,7 @@
         <div class="about-grid">
           <div class="about-narrative">
             <p>
-              At <strong>FICO</strong>, I work on enterprise decisioning for banks, lenders and insurers: taking written policy, agreeing what it really means with the business, and implementing it as rules, decision flows and scorecard integrations that systems can call and audit.
+              At <strong>FICO</strong>, I work on enterprise decisioning for banks, lenders and insurers: taking written policy, agreeing what it really means with the business, and implementing it as rules, decision flows and scorecard integrations that systems can call and audit. My depth is in unsecured lending and motor insurance.
             </p>
             <p>
               My day-to-day sits between the business and engineering: discovery and requirements, solution design, demos and proofs of concept, and the REST integrations that connect origination systems to the decision engine.
@@ -100,7 +137,7 @@
             <h3>What I bring</h3>
             <ul class="check-list">
               <li><strong>Policy to executable rules:</strong> credit policy implemented in FICO Blaze Advisor and Decision Modeler.</li>
-              <li><strong>Lending &amp; insurance domain:</strong> retail and unsecured lending, two-wheeler lending, insurance decisioning.</li>
+              <li><strong>Lending &amp; insurance domain:</strong> depth in unsecured lending and motor insurance, plus BNPL and two-wheeler lending.</li>
               <li><strong>Integration:</strong> REST APIs, request/response mappings and business object models between systems.</li>
               <li><strong>Client-facing delivery:</strong> discovery, demos, POCs and solution proposals.</li>
             </ul>
@@ -128,35 +165,69 @@
               <span class="badge badge-wip">API layer: Planned</span>
             </div>
             <div class="project-links">
-              <!-- [STREAMLIT_APP_URL] -->
-              <a href="[STREAMLIT_APP_URL]" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Open live demo</a>
-              <!-- [PROJECT_REPO_URL] remove this button if the repo stays private -->
-              <a href="[PROJECT_REPO_URL]" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Source code</a>
+              <a href="https://bfsi-workbench-prince.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" aria-label="Open the RuleLoom live demo (new tab)">Open live demo</a>
             </div>
           </div>
 
-          <h3 class="project-featured-title">AI-Enabled BFSI Business Rules Generation Platform</h3>
+          <h3 class="project-featured-title">RuleLoom: AI-assisted policy-to-rules workbench</h3>
           <p class="project-lead">
-            Upload a lending policy; Claude proposes one structured rule per clause; a reviewer approves or rejects each one; approved rules are versioned and then applied to applications by a plain-code decision engine that returns APPROVE, REFER or DECLINE with reason codes.
+            Upload a lending policy; Claude proposes one rule per clause; a named reviewer approves; plain code decides every application. Built as a personal prototype to show how AI can speed up policy-to-rules work without giving up control.
           </p>
 
-          <div class="project-details-grid">
-            <div class="detail-block">
-              <h4>Why it exists</h4>
-              <p>Turning written credit policy into executable rules is slow and open to interpretation gaps between policy and build teams. This explores how AI can speed up the first draft without taking away control or auditability.</p>
-            </div>
-            <div class="detail-block">
-              <h4>Design principle</h4>
-              <p>AI never makes the decision. It drafts rules from policy text; people approve them; deterministic code applies them. Every review is versioned, and activation is a separate, recorded step.</p>
-            </div>
+          <ul class="bullet-list">
+            <li><strong>Rules:</strong> one schema-validated rule per clause, with nothing pre-approved and every change versioned.</li>
+            <li><strong>Decisions:</strong> approved rules are applied by plain code, returning APPROVE, REFER or DECLINE with reason codes.</li>
+            <li><strong>Q&amp;A and change detection:</strong> Voyage AI embeddings find the right clauses; answers cite them or decline.</li>
+          </ul>
+
+          <div class="tech-stack-row">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Claude API</span>
+                <span class="tech-tag">Voyage AI</span>
+                <span class="tech-tag">RAG</span>
+                <span class="tech-tag">Pydantic</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag tech-tag-planned">FastAPI (Planned)</span>
+              </div>
+          <p class="note">The demo is passcode-protected to control API cost. Email me for the passcode. The app's Start tab loads a sample policy with no AI call. The first load may take a moment while the free host wakes up.</p>
+
+          <div class="screens">
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="assets/screens/app-start.webp" />
+                <img src="assets/screens/app-start.png" width="1600" height="633" alt="RuleLoom Start tab: upload a policy, AI proposes one rule per clause, you approve every rule, code decides every application" loading="lazy" decoding="async" />
+              </picture>
+              <figcaption><strong>Start.</strong> The whole flow in one line: AI suggests, a person approves, plain code decides. Sample data loads with no AI call.</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="assets/screens/app-decide.webp" />
+                <img src="assets/screens/app-decide.png" width="1600" height="699" alt="RuleLoom Decide tab: six applications with APPROVE, REFER and DECLINE outcomes and reason codes" loading="lazy" decoding="async" />
+              </picture>
+              <figcaption><strong>Decide.</strong> Active rules applied to applications: outcomes with reason codes, and missing data referred to a person instead of guessed.</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="assets/screens/app-ask-policy.webp" />
+                <img src="assets/screens/app-ask-policy.png" width="1600" height="635" alt="RuleLoom Ask the policy tab: retrieved clauses with similarity scores and a cited answer" loading="lazy" decoding="async" />
+              </picture>
+              <figcaption><strong>Ask the policy.</strong> Embedding retrieval finds the closest clauses; the answer must cite them, and every number is checked by code.</figcaption>
+            </figure>
           </div>
 
+          <div class="scope-box">
+            <strong>Scope, stated plainly.</strong> RuleLoom is a prototype built with Claude Code, running on synthetic data. It reads .txt policies in a predefined format, uses ten fixed rule fields and one rule per clause, and has no API layer yet. It has 124 automated tests. I'd rather show you exactly what it does than oversell it.
+          </div>
+
+          <details class="more">
+            <summary>How it works, and what it does in full</summary>
           <div class="architecture-box">
             <div class="box-header">
-              <span class="mono-label">HOW IT WORKS — CURRENT PROTOTYPE</span>
+              <span class="mono-label">HOW RULELOOM WORKS — CURRENT PROTOTYPE</span>
             </div>
-            <div class="arch-diagram-wrapper">
-              <svg class="arch-svg" viewBox="0 0 920 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow: policy intake, Voyage AI embeddings, Claude rule proposal, human review with audit trail, plain-code decision engine">
+            <div class="arch-diagram-wrapper" role="region" aria-label="RuleLoom flow diagram (scrolls sideways on small screens)" tabindex="0">
+              <svg class="arch-svg" viewBox="0 0 920 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RuleLoom flow: policy intake, Voyage AI embeddings, Claude rule proposal, human review with audit trail, plain-code decision engine">
                 <defs>
                   <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
                     <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748B" />
@@ -197,10 +268,8 @@
             </div>
           </div>
 
-          <div class="capabilities-and-preview">
-            <div class="capabilities-col">
-              <h4>What it does today</h4>
-              <ul class="bullet-list">
+            <h4 class="more-h">What it does today</h4>
+            <ul class="bullet-list">
                 <li>Splits a policy into clauses and proposes one rule per clause, validated against a strict schema.</li>
                 <li>Detects what changed when a new policy version is uploaded, and calls the model only for changed or new clauses.</li>
                 <li>Requires a named reviewer to approve or reject; nothing is pre-approved on a first review.</li>
@@ -209,58 +278,47 @@
                 <li>Answers policy questions using embedding retrieval, grounded in the retrieved clauses with citations, and refuses when evidence is weak.</li>
                 <li>Tracks token usage and cost per call type.</li>
               </ul>
-
-              <div class="tech-stack-row">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Streamlit</span>
-                <span class="tech-tag">Claude API</span>
-                <span class="tech-tag">Voyage AI</span>
-                <span class="tech-tag">RAG</span>
-                <span class="tech-tag">Pydantic</span>
-                <span class="tech-tag">SQLite</span>
-                <span class="tech-tag tech-tag-planned">FastAPI (Planned)</span>
+            <div class="project-details-grid">
+              <div class="detail-block">
+                <h4>Why it exists</h4>
+                <p>Turning written credit policy into executable rules is slow and open to interpretation gaps between policy and build teams. This explores how AI can speed up the first draft without taking away control or auditability.</p>
               </div>
-              <p class="note">The demo is passcode-protected to control API cost. Email me for the passcode. The app's Start tab loads a sample policy with no AI call. The first load may take a moment while the free host wakes up.</p>
-            </div>
-
-            <div class="screenshot-col">
-              <div class="browser-frame">
-                <div class="browser-dots">
-                  <span></span><span></span><span></span>
-                  <span class="browser-url">Rule review</span>
-                </div>
-                <div class="screenshot-placeholder">
-                  <!-- [SCREENSHOTS] replace with: <img src="assets/rules-review.png" alt="Rule review screen of the platform" /> -->
-                  <div class="placeholder-inner">
-                    <p><strong>[SCREENSHOTS]</strong></p>
-                    <span>Add a screenshot of the rule review tab (synthetic data only).</span>
-                  </div>
-                </div>
+              <div class="detail-block">
+                <h4>Design principle</h4>
+                <p>AI never makes the decision. It drafts rules from policy text; people approve them; deterministic code applies them. Every review is versioned, and activation is a separate, recorded step.</p>
               </div>
             </div>
-          </div>
-
-          <div class="scope-box">
-            <strong>Scope, stated plainly.</strong> This is a personal working prototype, not a production system. It reads a predefined policy format (.txt), uses ten fixed rule fields and one rule per clause, and runs on synthetic data. There is no API layer yet. I'd rather show you exactly what it does than oversell it.
-          </div>
+          </details>
         </article>
 
-        <div class="roadmap-header" style="margin-top:56px;">
-          <h3>Planned</h3>
-          <p>Next builds, not started. Shown to indicate direction, not as delivered work.</p>
+        <p class="next-line">Next: testing and governance tooling for AI decision systems.</p>
+      </div>
+    </section>
+
+    <!-- How I work with AI -->
+    <section id="approach" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">03 / Approach</span>
+          <h2 class="section-title">How I work with AI</h2>
+          <p class="section-description">The principles behind RuleLoom, and how I would approach AI in a regulated lending setting.</p>
         </div>
-        <div class="projects-grid" id="projectsGrid">
-          <!-- Rendered by script.js (data lives there) -->
-        </div>
-        <noscript><p class="note">Planned: AI decision engine testing &amp; governance platform; AI-powered lending underwriting copilot.</p></noscript>
+        <ul class="principles card">
+          <li><strong>AI proposes, a person approves, plain code decides.</strong> The model never makes the final decision.</li>
+          <li><strong>I build with Claude Code and review the code</strong> that ships in my projects.</li>
+          <li><strong>Guardrails live in code, not in the prompt:</strong> every AI output is checked against a schema before anything uses it.</li>
+          <li><strong>No numbers outside the decision facts:</strong> figures in an AI explanation must appear in the facts behind the decision, or the explanation is discarded.</li>
+          <li><strong>Answers cite their sources or decline:</strong> a policy question is answered only from retrieved clauses.</li>
+        </ul>
+        <p class="note">RuleLoom is prototype work on synthetic data, not a production system.</p>
       </div>
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="section section-alt">
+    <section id="experience" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">03 / Career</span>
+          <span class="section-label">04 / Career</span>
           <h2 class="section-title">Experience</h2>
         </div>
 
@@ -268,95 +326,93 @@
           <div class="exp-header">
             <div>
               <h3 class="exp-company">FICO</h3>
-              <!-- [JOB_TITLE] exact HR designation -->
-              <p class="exp-role">[JOB_TITLE] • Decisioning &amp; BFSI solutions</p>
+              <p class="exp-role">Lead Engineer, Solution Engineering • Decisioning &amp; BFSI solutions</p>
             </div>
             <span class="badge badge-neutral">March 2019 – Present</span>
           </div>
 
-          <p class="timeline-note">Joined as an intern in March 2019 (about 1.5 years), then moved into a full-time role.</p>
+          <p class="timeline-note">Joined as an intern in March 2019 (about 1.5 years), then moved into a full-time role. Day to day: discovery and requirements, solution design, demos and proofs of concept, and delivery with business and engineering teams.</p>
 
-          <div class="exp-grid">
-            <div class="exp-item">
-              <h4>Policy to rules</h4>
-              <p>Translate credit and underwriting policy into executable business rules and decision strategies in FICO Blaze Advisor and Decision Modeler, including scorecard integration.</p>
-            </div>
-            <div class="exp-item">
-              <h4>Integration</h4>
-              <p>Work on integrating lending origination systems with decisioning platforms: REST APIs, request/response mappings, validation and business object models.</p>
-            </div>
-            <div class="exp-item">
-              <h4>Client consulting</h4>
-              <p>Take part in discovery and requirements sessions, run demos and proofs of concept, and contribute to solution proposals and documentation.</p>
-            </div>
-            <div class="exp-item">
-              <h4>Delivery</h4>
-              <p>Support implementation, testing and validation with business, technical and delivery teams across lending and insurance engagements.</p>
-            </div>
-          </div>
+          <ul class="bullet-list">
+            <li>Turned written credit policy and motor-insurance rating logic into executable rules, decision tables and decision strategies in FICO Blaze Advisor and Decision Modeler.</li>
+            <li>Implemented and operationalized 20+ credit scorecards for personal loans and credit cards, using credit bureau data in live decision flows.</li>
+            <li>Designed and supported REST integrations between loan origination systems and the decision engine, including request/response mapping, validation and exception handling.</li>
+            <li>Worked on an IFRS 9 expected-credit-loss proof of concept covering PD, LGD and EAD inputs and ECL calculation across stages.</li>
+            <li>Investigated unexpected decision outcomes and traced each one to its root cause.</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section">
+    <section id="skills" class="section section-alt">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">04 / Capabilities</span>
+          <span class="section-label">05 / Capabilities</span>
           <h2 class="section-title">Skills</h2>
-          <p class="section-description">Grouped by how I actually use them.</p>
+          <p class="section-description">Grouped by area.</p>
         </div>
 
         <div class="skills-grid">
           <div class="skill-card card">
-            <h3>Used professionally</h3>
-            <p class="skill-cat-desc">Decisioning, integration and consulting</p>
+            <h3>Decisioning &amp; Rules</h3>
+            <p class="skill-cat-desc">Policy execution on enterprise decision platforms</p>
             <div class="skill-tags">
               <span class="skill-pill core">FICO Blaze Advisor</span>
               <span class="skill-pill core">FICO Decision Management Platform</span>
               <span class="skill-pill core">FICO Decision Modeler</span>
               <span class="skill-pill core">Business rules</span>
+              <span class="skill-pill core">Decision flows</span>
+              <span class="skill-pill core">Decision strategies</span>
+              <span class="skill-pill core">Decision tables</span>
               <span class="skill-pill core">Business object models</span>
-              <span class="skill-pill core">Scorecard integration</span>
-              <span class="skill-pill core">REST APIs</span>
-              <span class="skill-pill core">SQL</span>
-              <span class="skill-pill core">Requirements &amp; discovery</span>
-              <span class="skill-pill core">Demos &amp; POCs</span>
             </div>
           </div>
 
           <div class="skill-card card">
-            <h3>Working knowledge</h3>
-            <p class="skill-cat-desc">Familiar, used alongside the main work</p>
-            <div class="skill-tags">
-              <span class="skill-pill core">Java (integration level)</span>
-              <span class="skill-pill core">Jira</span>
-              <span class="skill-pill core">Tableau (exposure)</span>
-            </div>
-          </div>
-
-          <div class="skill-card card">
-            <h3>Building now</h3>
-            <p class="skill-cat-desc">Applied AI, through hands-on projects</p>
-            <div class="skill-tags">
-              <span class="skill-pill learning">Python</span>
-              <span class="skill-pill learning">Claude API</span>
-              <span class="skill-pill learning">Prompting &amp; structured outputs</span>
-              <span class="skill-pill learning">RAG &amp; embeddings (Voyage AI)</span>
-              <span class="skill-pill learning">Human-in-the-loop design</span>
-              <span class="skill-pill learning">LangChain</span>
-              <span class="skill-pill learning">LangGraph</span>
-            </div>
-          </div>
-
-          <div class="skill-card card">
-            <h3>Domains</h3>
+            <h3>Lending &amp; Insurance</h3>
             <p class="skill-cat-desc">Where the work has been</p>
             <div class="skill-tags">
-              <span class="skill-pill core">Retail &amp; unsecured lending</span>
-              <span class="skill-pill core">Two-wheeler lending</span>
-              <span class="skill-pill core">Insurance decisioning</span>
-              <span class="skill-pill core">Credit policy</span>
+              <span class="skill-pill core">Credit decisioning</span>
+              <span class="skill-pill core">Credit policy implementation</span>
+              <span class="skill-pill core">Credit scorecards</span>
+              <span class="skill-pill core">Credit bureau data</span>
+              <span class="skill-pill core">Unsecured lending</span>
+              <span class="skill-pill core">Personal loans &amp; credit cards</span>
+              <span class="skill-pill core">Motor insurance</span>
+              <span class="skill-pill core">BNPL / digital credit</span>
+              <span class="skill-pill core">IFRS 9 ECL</span>
+            </div>
+          </div>
+
+          <div class="skill-card card">
+            <h3>Integration &amp; Delivery</h3>
+            <p class="skill-cat-desc">Connecting systems and clients to decisions</p>
+            <div class="skill-tags">
+              <span class="skill-pill core">REST APIs</span>
+              <span class="skill-pill core">Loan origination systems</span>
+              <span class="skill-pill core">Request/response mapping</span>
+              <span class="skill-pill core">Data validation</span>
+              <span class="skill-pill core">SQL</span>
+              <span class="skill-pill core">Java</span>
+              <span class="skill-pill core">Requirements &amp; discovery</span>
+              <span class="skill-pill core">Solution design</span>
+              <span class="skill-pill core">Demos &amp; POCs</span>
+              <span class="skill-pill core">UAT</span>
+              <span class="skill-pill core">Jira</span>
+            </div>
+          </div>
+
+          <div class="skill-card card">
+            <h3>Applied AI</h3>
+            <p class="skill-cat-desc">Practical, human-reviewed AI</p>
+            <div class="skill-tags">
+              <span class="skill-pill core">Claude API</span>
+              <span class="skill-pill core">Claude Code</span>
+              <span class="skill-pill core">Prompting &amp; structured outputs</span>
+              <span class="skill-pill core">RAG &amp; embeddings (Voyage AI)</span>
+              <span class="skill-pill core">Human-in-the-loop design</span>
+              <span class="skill-pill core">Python</span>
             </div>
           </div>
         </div>
@@ -364,20 +420,21 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
       <div class="container">
         <div class="contact-card card">
-          <span class="section-label">05 / Connect</span>
+          <span class="section-label">06 / Connect</span>
           <h2 class="section-title">Get in touch</h2>
           <p class="contact-text">
             I'm exploring roles in decisioning, BFSI solution consulting and applied AI for financial services. Open to Gurugram/Delhi NCR, Bengaluru and strong opportunities elsewhere.
           </p>
 
           <div class="contact-actions">
-            <a href="mailto:gprincegarg@gmail.com" class="btn btn-primary">gprincegarg@gmail.com</a>
-            <button type="button" class="btn btn-secondary" id="copyEmailBtn" data-email="gprincegarg@gmail.com">Copy email</button>
+            <a href="#contact" class="btn btn-primary" id="emailLink">Email me</a>
+            <button type="button" class="btn btn-secondary" id="copyEmailBtn">Copy email address</button>
           </div>
           <p class="note" id="copyStatus" role="status" aria-live="polite"></p>
+          <noscript><p class="note">Turn on JavaScript to email me, or message me on LinkedIn.</p></noscript>
 
           <div class="contact-links">
             <a href="https://www.linkedin.com/in/prince-garg1188/" target="_blank" rel="noopener noreferrer">LinkedIn →</a>
